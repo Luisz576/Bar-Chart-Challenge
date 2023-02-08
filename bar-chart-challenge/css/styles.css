@@ -15,10 +15,9 @@ body{
 }
 /* STYLES */
 .bar-chart-main{
-    display: flex;
-    width: 30vw;
-    justify-content: center;
-    margin: 150px auto;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 25vw;
     font-family: 'Poppins', sans-serif;
 }
 .bar-chart-main-content{
@@ -47,10 +46,42 @@ body{
 }
 .bar-chart-header-icon{
     float: right;
+    display: flex;
+    align-items: center;
+}
+.bar-chart-header-icon img{
+    width: 60px;
 }
 .bar-chart{
+    display: grid;
+    grid-template-rows: 1fr 6fr 2fr;
     border-radius: 8px;
     background-color: var(--white-color);
     padding: 15px 20px;
     color: var(--secundary-color);
+}
+.bar-chart h1{
+    font-size: 1.2rem;
+}
+.chart-info{
+    display: flex;
+    justify-content: space-between;
+}
+.chart-info-main, .chart-info-income{
+    margin-top: 10px;
+}
+.chart-info-main p, .chart-info-income p, .chart-info-income span{
+    font-size: 0.6rem;
+}
+.chart-info-main span{
+    font-size: 1.2rem;
+}
+.chart-info-income{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.chart-info-income span{
+    font-weight: bold;
 }
