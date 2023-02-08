@@ -1,0 +1,56 @@
+/* VARS */
+:root{
+    --primary-color: #EC755E;
+    --background-color: #F8EADC;
+    --white-color: #FFFCF7;
+    --secundary-color: #332117;
+}
+/* CLEAR */
+body, p, h1, h2, h3{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: var(--background-color);
+}
+/* STYLES */
+.bar-chart-main{
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+    margin: 150px auto;
+    font-family: 'Poppins', sans-serif;
+}
+.bar-chart-main-content{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+}
+.bar-chart-header{
+    display: flex;
+    border-radius: 8px;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px 20px;
+}
+.bar-chart-balance{
+    display: grid;
+    gap: 10px;
+}
+.bar-chart-balance p{
+    font-size: 0.8rem;
+}
+.bar-chart-balance span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.bar-chart-header-icon{
+    float: right;
+}
+.bar-chart{
+    border-radius: 8px;
+    background-color: var(--white-color);
+    padding: 15px 20px;
+    color: var(--secundary-color);
+}
