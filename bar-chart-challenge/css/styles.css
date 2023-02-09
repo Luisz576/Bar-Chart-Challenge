@@ -4,10 +4,15 @@
     --background-color: #F8EADC;
     --white-color: #FFFCF7;
     --secundary-color: #332117;
+    --selected-color: #75B6BB;
 }
 /* CLEAR */
-body, p, h1, h2, h3{
+body, p, h1, h2, h3, ul, li {
     margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
 }
 body{
     height: 100vh;
@@ -63,6 +68,46 @@ body{
 .bar-chart h1{
     font-size: 1.2rem;
 }
+.chart{
+    -webkit-user-select: none;     
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.chart-items{
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100%;
+    justify-content: space-between;
+    align-items: end;
+    column-gap: 20px;
+}
+.chart-bar{
+    position: relative;
+    flex: 1;
+}
+.chart-bar span{
+    height: 5px;
+    border-radius: 4px;
+    width: 100%;
+    display: block;
+    background-color: var(--primary-color);
+    margin-bottom: 5px; 
+    transition: height 1s;
+}
+.chart-bar.selected span{
+    background-color: var(--selected-color);
+}
+.chart-bar p{
+    font-size: 0.6rem;
+    text-align: center;
+}
+.chart-bar p:hover{
+    cursor: pointer;
+}
+.chart-bar:hover{
+    cursor: pointer;
+}
 .chart-info{
     display: flex;
     justify-content: space-between;
@@ -84,4 +129,29 @@ body{
 }
 .chart-info-income span{
     font-weight: bold;
+}
+@media only screen and (max-width: 1200px){
+    .bar-chart-main{
+        width: 35vw;
+    }
+}
+@media only screen and (max-width: 860px){
+    .bar-chart-main{
+        width: 45vw;
+    }
+}
+@media only screen and (max-width: 680px){
+    .bar-chart-main{
+        width: 55vw;
+    }
+}
+@media only screen and (max-width: 580px){
+    .bar-chart-main{
+        width: 65vw;
+    }
+}
+@media only screen and (max-width: 500px){
+    .bar-chart-main{
+        width: 80vw;
+    }
 }

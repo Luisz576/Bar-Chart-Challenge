@@ -16,31 +16,59 @@
                 <div class="bar-chart-header">
                     <div class="bar-chart-balance">
                         <p>My balance</p>
-                        <span>$921.48</span>
+                        <span>$<span id="money">0.00</span></span>
                     </div>
                     <div class="bar-chart-header-icon">
                         <img alt="balance icon" src="./imgs/icon.svg">
                     </div>
                 </div>
                 <div class="bar-chart">
-                    <div>
-                        <h1>Spending - Last 7 days</h1>
-                    </div>
-                    <div class="chart" style="background-color: tomato;">
-                        <div></div>
+                    <h1>Spending - Last 7 days</h1>
+                    <div class="chart">
+                        <ul class="chart-items">
+                            <li class="chart-bar selected">
+                                <span></span>
+                                <p>mon</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>tue</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>wed</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>thu</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>fri</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>sat</p>
+                            </li>
+                            <li class="chart-bar">
+                                <span></span>
+                                <p>sun</p>
+                            </li>
+                        </ul>
                     </div>
                     <div class="chart-info">
                         <div class="chart-info-main">
                             <p>Total this month</p>
-                            <h3>$478.33</h3>
+                            <h3>$<span id="month_total">0.00</span></h3>
                         </div>
                         <div class="chart-info-income">
-                            <span>+2.4%</span>
+                            <span>+<span id="income">0.00</span>%</span>
                             <p>from last month</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <script src="./js/fake-api.js"></script>
     </body>
 </html>
